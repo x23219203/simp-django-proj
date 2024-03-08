@@ -11,3 +11,7 @@ class Movie(models.Model):
   
   def __str__(self):
         return self.title + " - " + self.director
+        
+  @property
+  def is_post_production_completed(self):
+   return self.duration > 0

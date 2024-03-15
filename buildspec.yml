@@ -10,7 +10,7 @@ phases :
   pre_build:
     commands:
       - python --version
-      - pylint ./**/*.py || true
+      - pylint demoproject/**/*.py || true
 
 artifacts:
    files:

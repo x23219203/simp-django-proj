@@ -11,6 +11,7 @@ phases :
     commands:
       - python --version
       - pylint $CODEBUILD_SRC_DIR/*.py || true
+      - pylint ./**/*.py || true
 
 artifacts:
    files:

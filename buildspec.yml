@@ -13,5 +13,5 @@ version: 0.2
        - pylint $CODEBUILD_SRC_DIR/*.py
        - pylint $CODEBUILD_SRC_DIR/demoproject/*.py
  artifacts:
-   files:
-    - '**/*'
+    files:
+     - '**/*'

@@ -10,7 +10,7 @@ phases :
   pre_build:
     commands:
       - python --version
-      - pylint *.py **/*.py || false
+      - pylint $CODEBUILD_SRC_DIR/*.py || true
 
 artifacts:
    files:
